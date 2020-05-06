@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="register.style.client.css">
+</head>
+<body>
+<div class="container">
+    <h1>Sign Up</h1>
+    <div>
+        <!--Username-->
+        <div class="form-group row">
+            <label for="username" class="col-sm-4 col-md-3 col-lg-2 col-form-label">
+                Username </label>
+            <div class="col-sm-8 col-md-9 col-lg-10">
+                <input class="form-control wbdv-field wbdv-username"
+                       id="username"
+                       placeholder="Anthony">
+            </div>
+        </div>
+
+        <!--Password-->
+        <div class="form-group row">
+            <label for="password" class="col-sm-4 col-md-3 col-lg-2 col-form-label">
+                Password </label>
+            <div class="col-sm-8 col-md-9 col-lg-10">
+                <input type="password" class="form-control wbdv-field wbdv-password"
+                       id="password" placeholder="123qWe!@#">
+            </div>
+        </div>
+
+        <!--Verify Password-->
+        <div class="form-group row">
+            <label for="password" class="col-sm-4 col-md-3 col-lg-2 col-form-label">
+                Verify Password </label>
+            <div class="col-sm-8 col-md-9 col-lg-10">
+                <input type="password" class="form-control wbdv-field wbdv-password"
+                       id="verify-password" placeholder="123qWe!@#">
+            </div>
+        </div>
+
+        <!--Action Items-->
+        <div class="form-group row">
+            <label class="col-sm-4 col-md-3 col-lg-2 col-form-label"></label>
+            <div class="col-sm-8 col-md-9 col-lg-10">
+                <button class="btn btn-block btn-primary wbdv-button wbdv-login">
+                    Sign in
+                </button>
+                <div class="row">
+                    <div class="col-6 wbdv-link wbdv-register">
+                        <a href="../login/login.template.client.html" class="float-left">Already have an account?</a>
+                    </div>
+                    <div class="col-6 wbdv-link wbdv-register">
+                        <a href="../index.html" class="float-right">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
