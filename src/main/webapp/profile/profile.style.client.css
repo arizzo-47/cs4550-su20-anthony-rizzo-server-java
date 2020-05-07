@@ -1,0 +1,17 @@
+.wbdv-update {
+    background-color: green;
+    border-color: green;
+}
+.wbdv-update:hover {
+    background-color: darkgreen;
+    border-color: darkgreen;
+}
+
+.wbdv-logout {
+    background-color: red;
+    border-color: red;
+}
+.wbdv-logout:hover {
+    background-color: darkred;
+    border-color: darkred;
+}
