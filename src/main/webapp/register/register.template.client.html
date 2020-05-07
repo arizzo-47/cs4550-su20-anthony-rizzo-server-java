@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <title>Register</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="register.style.client.css">
 </head>
 <body>
 <div class="container">
-    <h1>Sign Up</h1>
     <div>
+        <!--Header-->
+        <div class="row">
+            <h1 class="col-6">
+                Sign Up
+            </h1>
+            <div class="col-6">
+                <a href="../index.html" class="wbdv-cancel-link float-right">Cancel</a>
+            </div>
+        </div>
+
         <!--Username-->
         <div class="form-group row">
             <label for="username" class="col-sm-4 col-md-3 col-lg-2 col-form-label">
@@ -45,15 +55,12 @@
         <div class="form-group row">
             <label class="col-sm-4 col-md-3 col-lg-2 col-form-label"></label>
             <div class="col-sm-8 col-md-9 col-lg-10">
-                <button class="btn btn-block btn-primary wbdv-button wbdv-login">
-                    Sign in
+                <button class="btn btn-block btn-primary wbdv-button wbdv-register">
+                    Register
                 </button>
                 <div class="row">
                     <div class="col-6 wbdv-link wbdv-register">
-                        <a href="../login/login.template.client.html" class="float-left">Already have an account?</a>
-                    </div>
-                    <div class="col-6 wbdv-link wbdv-register">
-                        <a href="../index.html" class="float-right">Cancel</a>
+                        <a href="../login/login.template.client.html" class="float-left wbdv-link wbdv-login">Already have an account?</a>
                     </div>
                 </div>
             </div>
