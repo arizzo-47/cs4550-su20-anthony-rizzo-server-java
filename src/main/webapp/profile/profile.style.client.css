@@ -7,6 +7,11 @@
     border-color: darkgreen;
 }
 
+.wbdv-update:focus {
+    background-color: green;
+    border-color: greenyellow;
+}
+
 .wbdv-logout {
     background-color: red;
     border-color: red;
@@ -14,4 +19,9 @@
 .wbdv-logout:hover {
     background-color: darkred;
     border-color: darkred;
+}
+
+.wbdv-logout:focus {
+    background-color: red;
+    border-color: orangered;
 }
