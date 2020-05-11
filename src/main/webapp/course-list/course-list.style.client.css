@@ -1,0 +1,59 @@
+.body {
+    padding-top: 120px;
+}
+
+.table {
+    padding-top: 75px;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.table-row {
+    width: 80%;
+}
+
+.table-center {
+    width: 80%;
+    margin: 0px auto;
+    float: none;
+}
+
+.icon-grid {
+    padding-right: 20px;
+}
+
+
+.wbdv-add-course {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 1.25rem;
+}
+
+.fa-custom-color {
+    color: white;
+}
+
+.wbdv-fixed-add-course {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.wbdv-file-icon-spacing {
+    padding-right: 10px;
+}
