@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Editor</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          rel="stylesheet"/>
+
+    <link href="../styles.css" rel="stylesheet"/>
+
+    <link href="course-editor.style.client.css"
+          rel="stylesheet"/>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"/>
+
+<body>
+
+<div class="container">
+    <!--Header Section-->
+    <div class="row header-section">
+        <div class="col-sm-5 col-md-5 col-lg-4 col-xl-4">
+            <div class="wbdv-course-editor wbdv-close">
+                <a class="wbdv-lesson-tabs wbdv-close-icon" href="../index.html">
+                    <i class="fa fa-times"></i>
+                </a>
+            </div>
+
+            <h4 class="wbdv-course-title ">CS4450 - WebDev</h4>
+        </div>
+
+        <div class="col-sm-7 col-md-7 col-lg-8 col-xl-8">
+            <ul class="nav nav-pills nav-fill wbdv-lesson-list">
+                <li class="nav-item wbdv-topic-pill-divs">
+                    <a class="nav-link wbdv-lesson-tabs active" href="#">Build</a>
+                </li>
+                <li class="nav-item wbdv-topic-pill-divs">
+                    <a class="nav-link wbdv-lesson-tabs" href="#">Pages</a>
+                </li>
+                <li class="nav-item wbdv-topic-pill-divs">
+                    <a class="nav-link wbdv-lesson-tabs" href="#">Theme</a>
+                </li>
+                <li class="nav-item wbdv-topic-pill-divs">
+                    <a class="nav-link wbdv-lesson-tabs" href="#">Store</a>
+                </li>
+                <li class="nav-item wbdv-topic-pill-divs">
+                    <a class="nav-link wbdv-lesson-tabs" href="#">Apps</a>
+                </li>
+                <li class="nav-item wbdv-topic-pill-divs">
+                    <a class="nav-link wbdv-lesson-tabs" href="#">Settings</a>
+                </li>
+
+                <li class="nav-item wbdv-topic-pill-divs">
+                    <a class="nav-link wbdv-lesson-tabs" href="#">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <!--Lower Section-->
+    <div class="row">
+        <!--Module List Section-->
+        <div class="col-4 wbdv-module-list-div">
+            <div class="wbdv-module-section">
+                <ul class="list-group wbdv-module-list">
+                    <div class="row wbdv-module-item">
+                        <li class="list-group-item wbdv-module-item-title active">Module 1 - jQuery
+                            <i class="fa fa-times float-right"></i></li>
+                    </div>
+
+                    <div class="row wbdv-module-item">
+                        <li class="list-group-item wbdv-module-item-title">Module 2 - React
+                            <i class="fa fa-times float-right"></i>
+                        </li>
+                    </div>
+
+                    <div class="row wbdv-module-item">
+                        <li class="list-group-item wbdv-module-item-title">Module 3 - Redux
+                            <i class="fa fa-times float-right"></i></li>
+                    </div>
+
+                    <div class="row wbdv-module-item">
+                        <li class="list-group-item wbdv-module-item-title">Module 4 - Native
+                            <i class="fa fa-times float-right"></i></li>
+                    </div>
+
+                    <div class="row wbdv-module-item">
+                        <li class="list-group-item wbdv-module-item-title">Module 5 - Angular
+                            <i class="fa fa-times float-right"></i></li>
+                    </div>
+
+                    <div class="row wbdv-module-item">
+                        <li class="list-group-item wbdv-module-item-title">Module 6 - Node
+                            <i class="fa fa-times float-right"></i></li>
+                    </div>
+
+                    <div class="row wbdv-module-item">
+                        <li class="list-group-item wbdv-module-item-title">Module 7 - Mongo
+                            <i class="fa fa-times float-right"></i></li>
+                    </div>
+                </ul>
+
+                <button class="btn float-right wbdv-module-item-add-btn">
+                    <i class="fa fa-plus wbdv-module-item-add-btn-icon"></i>
+                </button>
+
+            </div>
+        </div>
+
+        <!--Topic/Widget Section-->
+        <div class="col-8 topic-widget-section">
+            <!--Topics-->
+            <div>
+                <ul class="nav nav-pills wbdv-topic-pill-list">
+                    <div>
+                        <li class="nav-item wbdv-topic-pill-divs">
+                            <a class="nav-link wbdv-topic-pills active" href="#">Topic 1</a>
+                        </li>
+                    </div>
+
+                    <div>
+                        <li class="nav-item wbdv-topic-pill-divs">
+                            <a class="nav-link wbdv-topic-pills" href="#">Topic 2</a>
+                        </li>
+                    </div>
+
+                    <div>
+                        <li class="nav-item wbdv-topic-pill-divs">
+                            <a class="nav-link wbdv-topic-pills" href="#">Topic 3</a>
+                        </li>
+                    </div>
+
+                    <div>
+                        <li class="nav-item wbdv-topic-pill-divs">
+                            <a class="nav-link wbdv-topic-pills" href="#">Topic 4</a>
+                        </li>
+                    </div>
+
+                    <div>
+                        <li class="nav-item wbdv-topic-pill-divs">
+                            <a class="nav-link wbdv-topic-pills" href="#">
+                                <i class="fa fa-plus"></i>
+                            </a>
+                        </li>
+                    </div>
+
+                </ul>
+
+            </div>
+
+            <br>
+
+            <!--Save/Preview-->
+            <div class="row">
+                <div class="buttons-in-main">
+                    <div class="float-right h-100">
+                        <i class="fa fa-toggle-off" aria-hidden="true"></i>
+                    </div>
+                    <div class="float-right">
+                        <h6 class="preview">Preview</h6>
+                    </div>
+                    <button class="btn btn-success float-right">
+                        Save
+                    </button>
+                </div>
+            </div>
+
+            <br>
+
+            <!--Widgets-->
+            <div class="widget-box">
+                <div class="row widget-sub">
+                    <div class="col-5">
+                        <h4>Heading Widget</h4>
+                    </div>
+                    <div class="col-7">
+                        <button class="btn btn-danger float-right wbdv-module-item-delete-btn">
+                            <i class="fa fa-times"></i>
+                        </button>
+
+                        <!--From bootstrap.com dropdown examples-->
+                        <div class="dropdown div-inline float-right">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Heading
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Heading Text</a>
+                                <a class="dropdown-item" href="#">Heading 1</a>
+                                <a class="dropdown-item" href="#">Widget Name</a>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-warning float-right arrow">
+                            <i class="fa fa-arrow-up"></i>
+                        </button>
+
+                        <button class="btn btn-warning float-right arrow">
+                            <i class="fa fa-arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row widget-sub widget-sub-border heading-text">
+                    <div>
+                        <h5 class="widget-sub-header">Heading Text</h5>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row widget-sub widget-sub-border">
+                    <!--From bootstrap.com dropdown examples-->
+                    <div class="dropdown div-inline float-right">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="heading-1-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Heading 1
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Heading Text</a>
+                            <a class="dropdown-item" href="#">Heading 1</a>
+                            <a class="dropdown-item" href="#">Widget Name</a>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row widget-sub widget-sub-border">
+                    <div>
+                        <h5 class="widget-sub-header">Widget name</h5>
+                    </div>
+                </div>
+
+                <div class="row widget-sub">
+                    <div>
+                        <h4 class="widget-sub-header">Preview</h4>
+                    </div>
+                </div>
+
+                <div class="row widget-sub">
+                    <div>
+                        <h3 class="widget-sub-header">Heading Text</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <br>
+
+            <!--Lower add button-->
+            <div class="row">
+                <div class="buttons-in-main">
+                    <button class="btn btn-danger float-right">
+                        <i class="fa fa-plus-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+</body>
+</html>

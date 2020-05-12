@@ -1,0 +1,179 @@
+body {
+    min-width:1000px;
+}
+
+.container {
+    max-width: 90%;
+}
+
+.list-group-item {
+    width: 100%;
+}
+
+.wbdv-module-item {
+    padding-bottom: 5px;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    background-color: dimgrey;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #c6c8ca;
+    border-color: #c6c8ca;
+}
+
+.wbdv-module-item-title {
+    color: white;
+}
+
+.wbdv-module-list-div {
+    background-color: #212529;
+}
+
+.wbdv-lesson-item-add-btn-icon {
+    color:white;
+    background-color: transparent;
+    border: transparent;
+    position: relative;
+    top: 25%;
+}
+
+.wbdv-lesson-item-add-btn-icon:hover {
+    background-color: dimgrey;
+}
+
+.wbdv-module-section {
+    padding: 15px 15px 50px;
+}
+
+.wbdv-module-item-add-btn {
+    padding: .5rem .25rem;
+}
+
+.wbdv-close {
+    color: lightgrey;
+    position: relative;
+    top: 30%;
+    float: left;
+}
+
+.wbdv-close-icon {
+
+}
+
+.wbdv-close-icon:hover {
+    color: red;
+}
+
+.wbdv-course-title {
+    position: relative;
+    top: 30%;
+    color:white;
+    float:left;
+    padding-left: 30px;
+}
+
+.wbdv-lesson-tabs {
+    background-color: #212529;
+    color:white;
+}
+
+.header-section {
+    background-color: #212529;
+}
+
+.nav-pills .nav-link.active, .nav-pills.show > .nav-link {
+    color: #fff;
+    background-color: dimgrey;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0rem;
+}
+
+.wbdv-lesson-list {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.wbdv-topic-pills {
+    background-color: darkgray;
+    color:white;
+}
+
+.nav-link:hover {
+    color:white;
+    background-color: dimgrey;
+}
+
+.wbdv-topic-pill-divs {
+    padding: 10px;
+}
+
+.wbdv-module-item-add-btn-icon {
+    color: lightgrey;
+}
+
+.preview {
+    padding-left: 10px;
+    padding-right:10px;
+    margin-top: 14%;
+}
+
+.fa-toggle-off {
+    position: relative;
+    top: 20%;
+}
+.div-inline{
+    display:inline-block;
+}
+
+.widget-box {
+    border: 2px solid grey;
+    padding: 10px 7px 10px 7px;
+    border-radius: 5px;
+}
+
+.widget-sub {
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+}
+
+.widget-sub-border {
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.widget-sub-header {
+    padding-left: 15px;
+}
+
+.buttons-in-main {
+    width:98%;
+}
+
+.topic-widget-section {
+    border-right: 2px solid grey;
+    border-bottom: 2px solid grey;
+    padding: 10px 7px 10px 7px;
+}
+
+.arrow {
+    margin-right: 5px;
+}
+
+.wbdv-module-item-delete-btn {
+    margin-left: 5px;
+}
+
+.heading-text {
+    margin-top: 5px;
+}
