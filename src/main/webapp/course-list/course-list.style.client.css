@@ -1,22 +1,5 @@
-.body {
-    padding-top: 120px;
-}
-
-.table {
-    padding-top: 75px;
-}
-
-.container-fluid {
-    padding-right: 0px;
-    padding-left: 0px;
-}
-
-.table-row {
-    width: 80%;
-}
-
 .table-center {
-    width: 80%;
+    width: 100%;
     margin: 0px auto;
     float: none;
 }
@@ -25,23 +8,17 @@
     padding-right: 20px;
 }
 
+.navbar-brand {
+    margin-right: 0rem;
+}
 
 .wbdv-add-course {
-    display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 1.25rem;
+
+}
+
+.wbdv-add-course-group {
+    width: 100%;
+    position: relative;
 }
 
 .fa-custom-color {
@@ -57,3 +34,25 @@
 .wbdv-file-icon-spacing {
     padding-right: 10px;
 }
+
+.wbdv-course-manager {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .wbdv-course-manager {
+        display:none;
+    }
+}
+
+.btn-alignment {
+    margin-right:0;
+    margin-left: auto;
+}
+
+.input-alignment {
+    margin-right:0;
+    margin-left: auto;
+    width: 90%;
+}
+

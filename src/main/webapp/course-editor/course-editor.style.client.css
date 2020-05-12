@@ -177,3 +177,11 @@ body {
 .heading-text {
     margin-top: 5px;
 }
+
+.fa-times:hover {
+    color: red;
+}
+
+.wbdv-module-item-add-btn-icon:hover {
+    color: green;
+}

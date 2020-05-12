@@ -16,130 +16,145 @@
           rel="stylesheet"/>
 </head>
 <body>
-<div class="container-fluid">
+<div class="container">
     <!--Navigation Bar-->
     <nav class="navbar fixed-top navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand">
-                <button class="btn wbdv-button btn-outline-primary wbdv-hamburger my-2 my-sm-0" type="submit">
+            <!--Hamburger and Title-->
+            <div class="row col-xs-1 col-sm-1 col-md-4 col-lg-4">
+                <button class="float-right btn btn-outline-primary wbdv-field wbdv-hamburger">
                     <i class="fa fa-bars fa-custom-color"></i>
                 </button>
-                Course Manager</a>
-            <div class="col-10">
-                <button class="wbdv-button wbdv-add-course btn-success float-right" type="submit">
+
+                <label class="wbdv-label">
+                    <h4 class="wbdv-course-manager">Course Manager</h4>
+                </label>
+            </div>
+
+            <!--Add course-->
+            <div class="row col-xs-6 col-sm-11 col-md-8 col-lg-8 wbdv-add-course-group">
+                <div class="input-alignment">
+                    <input aria-label="Search" class="form-control wbdv-field" placeholder="New Course Title" type="search">
+                </div>
+
+                <button class="btn-alignment btn wbdv-add-course btn-success" type="submit">
                     <i class="fa fa-plus fa-custom-color"> </i>
                 </button>
-                <input aria-label="Search" class="form-control col-lg-9 col-md-7 col-sm-5 mr-sm-2 float-right" placeholder="New Course Title" type="search">
             </div>
-        </div>
     </nav>
 
     <h1>Course List</h1>
 
     <!--Table-->
-    <div class="container-fluid">
+    <div class="container">
 
         <table class="table table-center">
             <thead>
                 <tr class="table-dark">
-                    <th class="col-5">Title</th>
-                    <th>Owned by
+                    <th class="col-5 wbdv-header wbdv-title">Title</th>
+                    <th class="wbdv-header wbdv-owner">Owned by
                         <i class="fa fa-caret-down"></i>
                     </th>
-                    <th>Last modified by me</th>
-                    <th>
-                        <i class="fa fa-th icon-grid"></i>
-                        <i class="fa fa-sort-alpha-asc"></i>
+                    <th class="wbdv-header wbdv-last-modified">Last modified by me</th>
+                    <th class="wbdv-header">
+                        <i class="fa fa-th icon-grid wbdv-list-layout"></i>
+                        <i class="fa fa-sort-alpha-asc wbdv-sort"></i>
                     </th>
                 </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>
-                    <i class="fa  fa-file-text wbdv-file-icon-spacing"></i>
+            <tr class="wbdv-row">
+                <td class="wbdv-course">
+                    <i class="fa fa-file-text wbdv-file-icon-spacing wbdv-icon"></i>
                     CS4550
                 </td>
-                <td>JGA</td>
-                <td>Today</td>
+                <td class="wbdv-owner">JGA</td>
+                <td class="wbdv-modified-date">Today</td>
                 <td>
-                    <button class="float-right btn btn-danger btn-lg">
+                    <button class="float-right btn btn-danger btn-lg wbdv-button wbdv-delete">
                         <i class="fa fa-trash"></i>
                     </button>
                 </td>
             </tr>
-                <td>
-                    <i class="fa  fa-file-text wbdv-file-icon-spacing"></i>
+
+            <tr class="wbdv-row">
+                <td class="wbdv-course">
+                    <i class="fa fa-file-text wbdv-file-icon-spacing wbdv-icon"></i>
                     CS4550
                 </td>
-                <td>JGA</td>
-                <td>Today</td>
+                <td class="wbdv-owner">JGA</td>
+                <td class="wbdv-modified-date">Today</td>
                 <td>
-                    <button class="float-right btn btn-danger btn-lg">
+                    <button class="float-right btn btn-danger btn-lg wbdv-button wbdv-delete">
                         <i class="fa fa-trash"></i>
                     </button>
                 </td>
             </tr>
-            <tr>
-                <td>
-                    <i class="fa  fa-file-text wbdv-file-icon-spacing"></i>
+
+            <tr class="wbdv-row">
+                <td class="wbdv-course">
+                    <i class="fa fa-file-text wbdv-file-icon-spacing wbdv-icon"></i>
                     CS4550
                 </td>
-                <td>JGA</td>
-                <td>Today</td>
+                <td class="wbdv-owner">JGA</td>
+                <td class="wbdv-modified-date">Today</td>
                 <td>
-                    <button class="float-right btn btn-danger btn-lg">
+                    <button class="float-right btn btn-danger btn-lg wbdv-button wbdv-delete">
                         <i class="fa fa-trash"></i>
                     </button>
                 </td>
             </tr>
-            <tr>
-                <td>
-                    <i class="fa  fa-file-text wbdv-file-icon-spacing"></i>
+
+            <tr class="wbdv-row">
+                <td class="wbdv-course">
+                    <i class="fa fa-file-text wbdv-file-icon-spacing wbdv-icon"></i>
                     CS4550
                 </td>
-                <td>JGA</td>
-                <td>Today</td>
+                <td class="wbdv-owner">JGA</td>
+                <td class="wbdv-modified-date">Today</td>
                 <td>
-                    <button class="float-right btn btn-danger btn-lg">
+                    <button class="float-right btn btn-danger btn-lg wbdv-button wbdv-delete">
                         <i class="fa fa-trash"></i>
                     </button>
                 </td>
             </tr>
-            <tr>
-                <td>
-                    <i class="fa  fa-file-text wbdv-file-icon-spacing"></i>
+
+            <tr class="wbdv-row">
+                <td class="wbdv-course">
+                    <i class="fa fa-file-text wbdv-file-icon-spacing wbdv-icon"></i>
                     CS4550
                 </td>
-                <td>JGA</td>
-                <td>Today</td>
+                <td class="wbdv-owner">JGA</td>
+                <td class="wbdv-modified-date">Today</td>
                 <td>
-                    <button class="float-right btn btn-danger btn-lg">
+                    <button class="float-right btn btn-danger btn-lg wbdv-button wbdv-delete">
                         <i class="fa fa-trash"></i>
                     </button>
                 </td>
             </tr>
-            <tr>
-                <td>
-                    <i class="fa  fa-file-text wbdv-file-icon-spacing"></i>
+
+            <tr class="wbdv-row">
+                <td class="wbdv-course">
+                    <i class="fa fa-file-text wbdv-file-icon-spacing wbdv-icon"></i>
                     CS4550
                 </td>
-                <td>JGA</td>
-                <td>Today</td>
+                <td class="wbdv-owner">JGA</td>
+                <td class="wbdv-modified-date">Today</td>
                 <td>
-                    <button class="float-right btn btn-danger btn-lg">
+                    <button class="float-right btn btn-danger btn-lg wbdv-button wbdv-delete">
                         <i class="fa fa-trash"></i>
                     </button>
                 </td>
             </tr>
-            <tr>
-                <td>
-                    <i class="fa  fa-file-text wbdv-file-icon-spacing"></i>
+
+            <tr class="wbdv-row">
+                <td class="wbdv-course">
+                    <i class="fa fa-file-text wbdv-file-icon-spacing wbdv-icon"></i>
                     CS4550
                 </td>
-                <td>JGA</td>
-                <td>Today</td>
+                <td class="wbdv-owner">JGA</td>
+                <td class="wbdv-modified-date">Today</td>
                 <td>
-                    <button class="float-right btn btn-danger btn-lg">
+                    <button class="float-right btn btn-danger btn-lg wbdv-button wbdv-delete">
                         <i class="fa fa-trash"></i>
                     </button>
                 </td>
@@ -152,7 +167,7 @@
     </div>
 
 
-    <button class="wbdv-fixed-add-course wbdv-button wbdv-add-course btn-success my-2 my-sm-0" type="submit">
+    <button class="btn wbdv-fixed-add-course wbdv-button wbdv-add-course btn-success my-2 my-sm-0" type="submit">
         <i class="fa fa-plus fa-custom-color"> </i>
     </button>
 
