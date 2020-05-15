@@ -1,130 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>User Admin</title>
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet"
-          href="../styles.css">
-    <link rel="stylesheet"
-          href="user-admin.style.client.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-          rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="user-admin.style.client.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../services/user.service.client.js"></script>
+    <script src="user-admin.controller.client.js"></script>
 </head>
+
 <body>
 <div class="container">
     <h1>User Admin</h1>
 
     <div class="table-responsive">
         <table class="table">
+            <!--Table Header-->
             <thead>
-                <tr class="table-secondary">
-                    <th>
-                        Username
-                    </th>
-                    <th>
-                        Password
-                    </th>
-                    <th>
-                        First Name
-                    </th>
-                    <th>
-                        Last Name
-                    </th>
-                    <th>
-                        Role
-                    </th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                </tr>
+            <tr class="table-secondary">
+                <th>Username</th>
+                <th>Password</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Role</th>
+                <th>&nbsp;</th>
+            </tr>
 
-                <tr>
-                    <th>
-                        <label>
-                            <input class="form-control" type="text" placeholder="Username">
-                        </label>
-                    </th>
-                    <th>
-                        <label>
-                            <input class="form-control" type="password" placeholder="Password">
-                        </label>
-                    </th>
-                    <th>
-                        <label>
-                            <input class="form-control" type="text" placeholder="First Name">
-                        </label>
-                    </th>
-                    <th>
-                        <label>
-                            <input class="form-control" type="text" placeholder="Last Name">
-                        </label>
-                    </th>
-                    <th>
-                        <label>
-                            <select class="custom-select" id="role">
-                                <option value="FACULTY">Faculty</option>
-                                <option value="STUDENT">Student</option>
-                            </select>
-                        </label>
-                    </th>
-                    <th>
-                        <label>
-                            <button class="wbdv-button">
-                                <i class="fa fa-search fa-2x" aria-hidden="true"></i>
-                            </button>
-                        </label>
-                    </th>
-                    <th>
-                        <label>
-                            <button class="wbdv-button">
-                                <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
-                            </button>
-                        </label>
-                    </th>
-                    <th>
-                        <label>
-                            <button class="wbdv-button">
-                                <i class="fa fa-check fa-2x" aria-hidden="true"></i>
-                            </button>
-                        </label>
-                    </th>
+            <tr class="form-group wbdv-form">
+                <th>
+                    <label for="usernameFld"></label>
+                    <input class="form-control"
+                           id="usernameFld"
+                           placeholder="Username"/>
+                </th>
+                <th>
+                    <label for="passwordFld"></label>
+                    <input class="form-control"
+                           id="passwordFld"
+                           placeholder="Password"/>
+                </th>
+                <th>
+                    <label for="firstNameFld"></label>
+                    <input class="form-control"
+                           id="firstNameFld"
+                           placeholder="First Name"/>
+                </th>
+                <th>
+                    <label for="lastNameFld"></label>
+                    <input class="form-control"
+                           id="lastNameFld"
+                           placeholder="Last Name"/>
+                </th>
+                <th>
+                    <label for="roleFld"></label>
+                    <select class="form-control custom-select"
+                            id="roleFld">
+                        <option value="FACULTY">Faculty</option>
+                        <option value="STUDENT">Student</option>
+                        <option value="ADMIN">Admin</option>
+                        `
+                    </select>
+                </th>
 
-                </tr>
+                <th>
+                    <span class="float-right"
+                          style="white-space: nowrap">
+                        <button class="wbdv-button">
+                            <i class="fa-2x fa fa-search wbdv-search"></i>
+                        </button>
+                        <button class="wbdv-button">
+                            <i class="fa-2x fa fa-plus wbdv-create"></i>
+                        </button>
+                        <button class="wbdv-button">
+                            <i class="fa-2x fa fa-check wbdv-update"></i>
+                        </button>
+                    </span>
+                </th>
+            </tr>
             </thead>
 
-            <tbody>
-                <tr>
-                    <td>
-                        tlee
-                    </td>
-                    <td></td>
-                    <td>
-                        Tim
-                    </td>
-                    <td>
-                        Birns Lee
-                    </td>
-                    <td>
-                        FACULTY
-                    </td>
-                    <td></td>
-                    <td>
-                        <label>
-                            <button class="wbdv-button">
-                                <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-                            </button>
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <button class="wbdv-button">
-                                <i class="fa fa-pencil fa-2x wbdv-search-icon" aria-hidden="true"></i>
-                            </button>
-                        </label>
-                    </td>
-                </tr>
+            <tbody class="wbdv-tbody">
+            <tr class="wbdv-template wbdv-user wbdv-hidden">
+                <td class="wbdv-username">ada</td>
+                <td>&nbsp;</td>
+                <td class="wbdv-first-name">Ada</td>
+                <td class="wbdv-last-name">Lovelace</td>
+                <td class="wbdv-role">FACULTY</td>
+                <td class="wbdv-actions">
+                    <span class="float-right">
+                        <button class="wbdv-button">
+                            <i class="fa-2x fa fa-times wbdv-remove" id="wbdv-remove"></i>
+                        </button>
+                        <button class="wbdv-button">
+                            <i class="fa-2x fa fa-pencil wbdv-edit" id="wbdv-edit"></i>
+                        </button>
+                    </span>
+                </td>
+            </tr>
             </tbody>
         </table>
     </div>
