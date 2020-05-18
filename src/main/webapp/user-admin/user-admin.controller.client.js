@@ -66,7 +66,6 @@
 
         service.findUserById(userId)
             .then(function(user) {
-                console.log(user)
                 renderUser(user)
             })
     }
@@ -95,7 +94,6 @@
             copy.find('.wbdv-edit')
                 .attr('id', user._id)
                 .click(findUserById)
-
             $tbody.append(copy)
         }
     }
@@ -126,7 +124,6 @@
         service.findAllUsers()
             .then(function (allUsers) {
                 users = allUsers
-                console.log(allUsers)
                 renderUsers()
             })
     }

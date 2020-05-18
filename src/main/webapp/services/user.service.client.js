@@ -8,9 +8,7 @@ function AdminUserServiceClient() {
     var self = this;
 
     function createUser(user) {
-        console.log(user)
         const userString = JSON.stringify(user)
-        console.log(userString)
 
         return fetch(self.url, {
             method: 'POST',
@@ -52,7 +50,6 @@ function AdminUserServiceClient() {
     }
 
     function deleteUser(userId) {
-        console.log('removing user: ' + userId)
         return fetch(self.url + '/' + userId, {
             method: 'DELETE'
         })
