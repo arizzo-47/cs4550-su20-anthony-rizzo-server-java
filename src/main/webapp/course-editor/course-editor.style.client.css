@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-    max-width: 90%;
+    max-width: 95%;
 }
 
 .list-group-item {
@@ -35,6 +35,7 @@ body {
 
 .wbdv-module-list-div {
     background-color: #212529;
+    float: left;
 }
 
 .wbdv-lesson-item-add-btn-icon {
@@ -50,11 +51,11 @@ body {
 }
 
 .wbdv-module-section {
-    padding: 15px 15px 50px;
+    margin: 15px 15px 50px;
 }
 
 .wbdv-module-item-add-btn {
-    padding: .5rem .25rem;
+    margin: .5rem .25rem;
 }
 
 .wbdv-close {
@@ -73,11 +74,7 @@ body {
 }
 
 .wbdv-course-title {
-    position: relative;
-    top: 30%;
     color:white;
-    float:left;
-    padding-left: 30px;
 }
 
 .wbdv-lesson-tabs {
@@ -185,3 +182,9 @@ body {
 .wbdv-module-item-add-btn-icon:hover {
     color: green;
 }
+
+.fa-bars {
+    color: white;
+}
+
+
