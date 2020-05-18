@@ -48,8 +48,6 @@
                 users.push(actualUser)
                 renderAllUsers()
             })
-
-        users.push(newUser)
     }
 
     function findAllUsers() {
