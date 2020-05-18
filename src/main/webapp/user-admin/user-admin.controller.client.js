@@ -5,9 +5,72 @@
         {username: 'anthony', password: 'pswd', first: 'Anthony', last: 'Rizzo', role: 'STUDENT'},
         {username: 'jdupe', password: 'Password', first: 'Jared', last: 'Duperre', role: 'ADMIN'},
     ]
-    let $tbody, $addBtn
+    let $tbody, $addBtn, $updateBtn
     let $usernameFld, $passwordFld, $firstFld, $lastFld, $roleFld
     let service = new AdminUserServiceClient()
+    let selectedUser
+
+    // Event created whenever key stroke, button pressed, etc.
+    function deleteUser(event) {
+        const target = event.currentTarget
+        const $button = $(target)
+        const userId = $button.attr('id') //Read id
+
+        service.deleteUser(userId)
+            .then(function() {
+                users = users.filter(function (user) {
+                    return user._id !== userId
+                })
+                renderAllUsers()
+        })
+    }
+
+    function renderUser(user) {
+        selectedUser = user
+
+        $usernameFld.val(user.username)
+        $passwordFld.val(user.password)
+        $firstFld.val(user.first)
+        $lastFld.val(user.last)
+        $roleFld.val(user.role)
+    }
+
+    function updateUser() {
+        const updatedUser = {
+            _id: selectedUser._id,
+            username: $usernameFld.val(),
+            password: $passwordFld.val(),
+            first: $firstFld.val(),
+            last: $lastFld.val(),
+            role: $roleFld.val()
+        }
+
+        service.updateUser(selectedUser._id, updatedUser)
+            .then(function(status) {
+                users = users.map(function(user) {
+
+                    if(user._id === selectedUser._id) {
+                        renderAllUsers()
+                        return updatedUser
+                    } else {
+                        return user
+                    }
+                })
+            })
+    }
+
+    function selectUser(event) {
+        const target = event.currentTarget
+        const $button = $(target)
+        const userId = $button.attr('id') //Read id
+
+        service.findUserById(userId)
+            .then(function(user) {
+                console.log(user)
+                renderUser(user)
+            })
+    }
+
 
     function renderAllUsers() {
         //Grab template before emptying
@@ -19,12 +82,21 @@
         for(let i=0; i<users.length; i++) {
             const user = users[i]
             const copy = clone.clone()
-            $tbody.append(copy)
             copy.find('.wbdv-username').html(user.username)
             copy.find('.wbdv-password').html(user.password)
             copy.find('.wbdv-first-name').html(user.first)
             copy.find('.wbdv-last-name').html(user.last)
             copy.find('.wbdv-role').html(user.role)
+
+            copy.find('.wbdv-remove')
+                .attr('id', user._id)
+                .click(deleteUser)
+
+            copy.find('.wbdv-edit')
+                .attr('id', user._id)
+                .click(selectUser)
+
+            $tbody.append(copy)
         }
     }
 
@@ -64,6 +136,9 @@
         $tbody = $('tbody')
         $addBtn = $('.wbdv-create')
         $addBtn.click(createUser)
+
+        $updateBtn = $('.wbdv-update')
+        $updateBtn.click(updateUser)
 
         $usernameFld = $('.wbdv-username-fld')
         $passwordFld = $('.wbdv-password-fld')
