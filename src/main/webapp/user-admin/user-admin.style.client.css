@@ -4,6 +4,22 @@
     border-color: transparent;
 }
 
-.wbdv-button:hover {
-    color: grey;
+.wbdv-button {
+    background-color: transparent;
+}
+
+.wbdv-remove:hover {
+    color: red;
+}
+
+.wbdv-edit:hover {
+    color: yellowgreen;
+}
+
+.wbdv-create:hover {
+    color: green;
+}
+
+.wbdv-update:hover {
+    color: dodgerblue;
 }
