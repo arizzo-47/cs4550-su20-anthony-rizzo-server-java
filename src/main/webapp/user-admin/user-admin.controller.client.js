@@ -21,7 +21,7 @@
                 users = users.filter(function (user) {
                     return user._id !== userId
                 })
-                renderAllUsers()
+                renderUsers()
         })
     }
 
@@ -50,7 +50,7 @@
                 users = users.map(function(user) {
 
                     if(user._id === selectedUser._id) {
-                        renderAllUsers()
+                        renderUsers()
                         return updatedUser
                     } else {
                         return user
@@ -59,7 +59,7 @@
             })
     }
 
-    function selectUser(event) {
+    function findUserById(event) {
         const target = event.currentTarget
         const $button = $(target)
         const userId = $button.attr('id') //Read id
@@ -72,7 +72,7 @@
     }
 
 
-    function renderAllUsers() {
+    function renderUsers() {
         //Grab template before emptying
         const template = $('.wbdv-template')[0]
         const $template = $(template)
@@ -94,7 +94,7 @@
 
             copy.find('.wbdv-edit')
                 .attr('id', user._id)
-                .click(selectUser)
+                .click(findUserById)
 
             $tbody.append(copy)
         }
@@ -118,7 +118,7 @@
         service.createUser(newUser)
             .then(function (actualUser) {
                 users.push(actualUser)
-                renderAllUsers()
+                renderUsers()
             })
     }
 
@@ -127,7 +127,7 @@
             .then(function (allUsers) {
                 users = allUsers
                 console.log(allUsers)
-                renderAllUsers()
+                renderUsers()
             })
     }
 
