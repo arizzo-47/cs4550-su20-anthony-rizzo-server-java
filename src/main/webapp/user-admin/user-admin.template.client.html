@@ -29,40 +29,19 @@
             </tr>
 
             <tr class="form-group wbdv-form">
-                <th>
-                    <label for="usernameFld"></label>
-                    <input class="form-control"
-                           id="usernameFld"
-                           placeholder="Username"/>
-                </th>
-                <th>
-                    <label for="passwordFld"></label>
-                    <input class="form-control"
-                           id="passwordFld"
-                           placeholder="Password"/>
-                </th>
-                <th>
-                    <label for="firstNameFld"></label>
-                    <input class="form-control"
-                           id="firstNameFld"
-                           placeholder="First Name"/>
-                </th>
-                <th>
-                    <label for="lastNameFld"></label>
-                    <input class="form-control"
-                           id="lastNameFld"
-                           placeholder="Last Name"/>
-                </th>
-                <th>
-                    <label for="roleFld"></label>
-                    <select class="form-control custom-select"
-                            id="roleFld">
+                <th><input class="form-control wbdv-username-fld"
+                           placeholder="Username"/></th>
+                <th><input class="form-control wbdv-password-fld"
+                           placeholder="Password"/></th>
+                <th><input class="form-control wbdv-first-fld"
+                           placeholder="First Name"/></th>
+                <th><input class="form-control wbdv-last-fld"
+                           placeholder="Last Name"/></th>
+                <th><select class="form-control wbdv-role-fld custom-select">
                         <option value="FACULTY">Faculty</option>
                         <option value="STUDENT">Student</option>
                         <option value="ADMIN">Admin</option>
-                        `
-                    </select>
-                </th>
+                </select></th>
 
                 <th>
                     <span class="float-right"
@@ -70,11 +49,11 @@
                         <button class="wbdv-button">
                             <i class="fa-2x fa fa-search wbdv-search"></i>
                         </button>
-                        <button class="wbdv-button">
-                            <i class="fa-2x fa fa-plus wbdv-create"></i>
+                        <button class="wbdv-button wbdv-create">
+                            <i class="fa-2x fa fa-plus"></i>
                         </button>
-                        <button class="wbdv-button">
-                            <i class="fa-2x fa fa-check wbdv-update"></i>
+                        <button class="wbdv-button wbdv-update">
+                            <i class="fa-2x fa fa-check"></i>
                         </button>
                     </span>
                 </th>
@@ -82,12 +61,12 @@
             </thead>
 
             <tbody class="wbdv-tbody">
-            <tr class="wbdv-template wbdv-user wbdv-hidden">
-                <td class="wbdv-username">ada</td>
-                <td>&nbsp;</td>
-                <td class="wbdv-first-name">Ada</td>
-                <td class="wbdv-last-name">Lovelace</td>
-                <td class="wbdv-role">FACULTY</td>
+            <tr class="wbdv-template">
+                <td class="wbdv-username">Template Username</td>
+                <td class="wbdv-password">Template Password</td>
+                <td class="wbdv-first-name">Template First</td>
+                <td class="wbdv-last-name">Template Last</td>
+                <td class="wbdv-role">Template Role</td>
                 <td class="wbdv-actions">
                     <span class="float-right"
                           style="white-space: nowrap">
