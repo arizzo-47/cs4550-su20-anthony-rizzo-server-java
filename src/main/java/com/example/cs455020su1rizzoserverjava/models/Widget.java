@@ -17,6 +17,19 @@ public class Widget {
         this.type = type;
         this.id = id;
     }
+    public Widget(Integer id, String name, String type, String topicId) {
+        this.name = name;
+        this.type = type;
+        this.id = id;
+        this.topicId = topicId;
+    }
+    public Widget(Integer id, String name, String type, String topicId, String text) {
+        this.name = name;
+        this.type = type;
+        this.id = id;
+        this.topicId = topicId;
+        this.text = text;
+    }
     public Widget(Integer id, String name, String type, String topicId, String text, String size) {
         this.name = name;
         this.type = type;
@@ -24,14 +37,6 @@ public class Widget {
         this.topicId = topicId;
         this.text = text;
         this.size = size;
-    }
-
-    public Widget(Integer id, String name, String type, String topicId, String text) {
-        this.name = name;
-        this.type = type;
-        this.id = id;
-        this.topicId = topicId;
-        this.text = text;
     }
 
     //Setters
